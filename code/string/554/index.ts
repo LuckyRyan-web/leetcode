@@ -17,3 +17,28 @@ export function reverseWords(s: string): string {
 
     return result
 }
+
+/** split 也可以用正则 */
+export function reverseWordsSplitRegEx(s: string): string {
+    const arr = s.split(/\s/g)
+
+    let result = ''
+
+    result = arr
+        .map((v) => {
+            return v.split('').reverse().join('')
+        })
+        .join(' ')
+
+    return result
+}
+
+/** 正则写法, 识别 Let's 里面的单引号 */
+export function reverseWordsRegEx(s: string): string {
+    return s
+        .match(/[\w']+/g)!
+        .map((item) => {
+            return item.split('').reverse().join('')
+        })
+        .join(' ')
+}
