@@ -17,3 +17,5 @@ export function generate(numRows: number): number[][] {
 
     return result
 };
+
+// generate(5)
