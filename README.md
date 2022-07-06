@@ -2,6 +2,6 @@
 
 日常防老年痴呆
 
-## 数组类别
+## jest 文档
 
-[1. Two Sum](https://leetcode-cn.com/problems/two-sum/)
+https://jestjs.io/zh-Hans/docs/getting-started
