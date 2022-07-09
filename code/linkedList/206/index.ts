@@ -10,7 +10,7 @@
  * }
  */
 
-function reverseList(head: ListNode | null): ListNode | null {
+export function reverseList(head: Types.ListNode | null): Types.ListNode | null {
     let p1 = head
     let p2 = null
 

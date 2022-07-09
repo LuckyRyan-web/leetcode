@@ -3,7 +3,7 @@
  * 空间复杂度为 O(N)
  */
 
-class RecentCounter {
+export class RecentCounter {
     queue: number[]
 
     constructor() {
