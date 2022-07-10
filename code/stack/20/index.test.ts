@@ -1,7 +1,8 @@
 import { isValid } from './index'
 
+const str = '()[]{}'
+
 test('有效的括号', () => {
-    const str = '()[]{}'
 
     const target = true
 

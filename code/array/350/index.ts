@@ -35,3 +35,5 @@ export function intersect(nums1: number[], nums2: number[]): number[] {
 
     return res
 }
+
+intersect([1, 2, 2, 1], [2, 2])
