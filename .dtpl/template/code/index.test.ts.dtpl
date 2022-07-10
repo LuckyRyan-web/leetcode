@@ -3,3 +3,16 @@
  * @date $datetime
  * @since ${pkg.version}
  */
+
+interface ExampleType {
+    [key: string]: any
+    target: any
+}
+
+const example: ExampleType[] = []
+
+test('', () => {
+    example.forEach((v) => {
+        
+    })
+})
