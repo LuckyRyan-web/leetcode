@@ -4,15 +4,10 @@
  * @since ${pkg.version}
  */
 
-interface ExampleType {
-    [key: string]: any
-    target: any
-}
-
-const example: ExampleType[] = []
+const example_${ref.ModuleName}:Types.ExampleType[] = []
 
 test('', () => {
-    example.forEach((v) => {
+    example_${ref.ModuleName}.forEach((v) => {
         
     })
 })
