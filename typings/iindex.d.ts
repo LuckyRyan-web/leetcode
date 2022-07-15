@@ -8,3 +8,8 @@ export interface ListNode {
 export interface ObjType {
     [key: number | string]: any
 }
+
+export interface ExampleType {
+    [key: string]: any
+    target: any
+}
