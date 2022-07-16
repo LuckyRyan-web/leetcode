@@ -10,7 +10,7 @@ function addToArrayForm(num: number[], k: number): number[] {
     // 从数组的最右边开始计算，来模拟数字相加操作
     const len = num.length
 
-    for (let i = len - 1; i >= 0; --i) {
+    for (let i = len - 1; i >= 0; i--) {
         let carry = num[i] + k % 10
 
         k = Math.floor(k / 10)
