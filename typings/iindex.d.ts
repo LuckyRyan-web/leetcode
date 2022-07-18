@@ -13,3 +13,9 @@ export interface ExampleType {
     [key: string]: any
     target: any
 }
+
+export interface TreeNode {
+    val: number
+    left: TreeNode | null
+    right: TreeNode | null
+}
