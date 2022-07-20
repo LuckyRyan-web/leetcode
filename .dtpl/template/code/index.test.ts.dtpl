@@ -6,7 +6,7 @@
 
 const example_${ref.ModuleName}:Types.ExampleType[] = []
 
-test('', () => {
+test('${ref.ModuleName}', () => {
     example_${ref.ModuleName}.forEach((v) => {
         
     })

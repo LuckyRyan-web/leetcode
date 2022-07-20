@@ -1,4 +1,5 @@
 import { isValid } from './index'
+import { isValid as mapFunc } from './index2'
 
 const example = [
     {
@@ -30,3 +31,13 @@ test('有效的括号', () => {
         expect(res).toBe(v.target)
     })
 })
+
+
+test('有效的括号: map 方法', () => {
+    example.forEach((v) => {
+        const res = mapFunc(v.str)
+
+        expect(res).toBe(v.target)
+    })
+})
+
