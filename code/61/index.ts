@@ -25,7 +25,7 @@
  * 以此为推算，就可以假设移动的最后一个节点为 K, 倒数第二位节点为 K+1
  * 也就是 (K+1).next = null , K.next = head, 然后返回 K 即可
  * 
- * 计算移动位数的时候，只需要考虑到 k & count(链表长度)的结果即可， 因为长度为 3 的链表往右边移动 4 位跟往右边移动一位的结果是一样的
+ * 计算移动位数的时候，只需要考虑到 k % count(链表长度)的结果即可， 因为长度为 3 的链表往右边移动 4 位跟往右边移动一位的结果是一样的
  */
 
 function rotateRight(head: Types.ListNode | null, k: number): Types.ListNode | null {
