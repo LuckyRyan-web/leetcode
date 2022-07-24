@@ -24,7 +24,13 @@ const example_1184: Types.ExampleType[] = [
         start: 0,
         destination: 3,
         target: 4
-    }
+    },
+    {
+        distance: [7, 10, 1, 12, 11, 14, 5, 0],
+        start: 7,
+        destination: 2,
+        target: 17
+    },
 ]
 
 test('1184', () => {
