@@ -12,7 +12,7 @@
  * }
  */
 
-function maxDepth(root: Types.TreeNode | null): number {
+function maxDepth_Recursion(root: Types.TreeNode | null): number {
     if (!root) {
         return 0
     }
