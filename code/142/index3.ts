@@ -11,28 +11,27 @@
  */
 
 /** map 解法 */
-function detectCycle_Map(head: ListNode | null): ListNode | null {
+function detectCycle_3(head: ListNode | null): ListNode | null {
     if (!head || !head.next) {
         return null
     }
 
-    const map = new Map()
+    let fast = head
+    let slow = head
 
-    let p: ListNode | null = head
+    while (slow && slow.next) {
+        slow = slow.next
 
-    while (p) {
-        if (map.has(p)) {
-            return p
+        if (fast && fast.next && fast.next.next) {
+            fast = fast.next.next
+        } else {
+            return null
         }
 
-        map.set(p, p)
-        p = p?.next || null
+        if (slow === fast) {
+            return fast
+        }
     }
 
     return null
-};
-
-/**
- * 时间复杂度: O(N)
- * 空间复杂度: O(N)
- */
+}
