@@ -4,9 +4,10 @@
  * @since 1.0.0
  */
 
+/** 单链表解法，时间复杂度为 O(N) */
 class LRUCache {
     protected capacity!: number
-    protected map: Map<number, number> = new Map()
+    protected map: Map<number, number>
 
     constructor(capacity: number) {
         this.capacity = capacity
