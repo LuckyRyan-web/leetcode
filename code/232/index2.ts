@@ -1,5 +1,4 @@
 class MyQueue {
-
     /** 入栈队列 */
     protected inStack: number[]
 

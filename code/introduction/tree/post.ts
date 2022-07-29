@@ -11,7 +11,6 @@ const postOrder = (root: Tree) => {
     console.log(root.val)
 }
 
-
 /** 堆栈方法 */
 const postOrder_stack = (root: Tree) => {
     if (!root) {

@@ -1,6 +1,6 @@
 /**
- * @param numRows 
- * @returns 
+ * @param numRows
+ * @returns
  */
 export function generate(numRows: number): number[][] {
     const result: number[][] = []
@@ -16,6 +16,6 @@ export function generate(numRows: number): number[][] {
     }
 
     return result
-};
+}
 
 // generate(5)

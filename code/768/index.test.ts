@@ -13,8 +13,8 @@ const example_768: Types.ExampleType[] = [
     },
     {
         arr: [2, 1, 3, 4, 4],
-        target: 4
-    }
+        target: 4,
+    },
 ]
 
 // test('768', () => {

@@ -21,11 +21,11 @@ export default function lengthOfLongestSubstring(s: string): number {
         }
 
         // 滑动窗口, 纪录每个指针的最大值
-        maxLen = Math.max(maxLen, (right - left + 1))
+        maxLen = Math.max(maxLen, right - left + 1)
 
         // 存储字符串和他的下标
         map.set(s[right], right)
     }
 
     return maxLen
-};
+}

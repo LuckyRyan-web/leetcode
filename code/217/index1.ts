@@ -1,7 +1,7 @@
 /**
  * 对象存储数据
- * @param nums 
- * @returns 
+ * @param nums
+ * @returns
  */
 export function containsDuplicate(nums: number[]): boolean {
     const numMap: { [key: number]: number } = {}

@@ -9,18 +9,18 @@ const example_821: Types.ExampleType[] = [
     {
         s: 'loveleetcode',
         c: 'e',
-        target: [3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0]
+        target: [3, 2, 1, 0, 1, 0, 0, 1, 2, 2, 1, 0],
     },
     {
         s: 'aaab',
         c: 'b',
-        target: [3, 2, 1, 0]
+        target: [3, 2, 1, 0],
     },
     {
-        s: "aaba",
-        c: "b",
-        target: [2, 1, 0, 1]
-    }
+        s: 'aaba',
+        c: 'b',
+        target: [2, 1, 0, 1],
+    },
 ]
 
 test('', () => {

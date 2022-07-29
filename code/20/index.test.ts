@@ -3,25 +3,25 @@ import { isValid as mapFunc } from './index2'
 
 const example = [
     {
-        str: "()",
-        target: true
+        str: '()',
+        target: true,
     },
     {
         str: '()[]{}',
-        target: true
+        target: true,
     },
     {
-        str: "(]",
-        target: false
+        str: '(]',
+        target: false,
     },
     {
-        str: "([)]",
-        target: false
+        str: '([)]',
+        target: false,
     },
     {
-        str: "{[]}",
-        target: true
-    }
+        str: '{[]}',
+        target: true,
+    },
 ]
 
 test('有效的括号', () => {
@@ -32,7 +32,6 @@ test('有效的括号', () => {
     })
 })
 
-
 test('有效的括号: map 方法', () => {
     example.forEach((v) => {
         const res = mapFunc(v.str)
@@ -40,4 +39,3 @@ test('有效的括号: map 方法', () => {
         expect(res).toBe(v.target)
     })
 })
-

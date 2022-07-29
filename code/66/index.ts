@@ -4,9 +4,7 @@
  * @since 1.0.0
  */
 export function plusOne(digits: number[]): number[] {
-
     for (let i = digits.length - 1; i >= 0; i--) {
-
         // 只要判断这一位数是不是 9, 如果不是 9 的话这一位数加一即可
         if (digits[i] !== 9) {
             digits[i]++
@@ -21,4 +19,4 @@ export function plusOne(digits: number[]): number[] {
     digits.unshift(1)
 
     return digits
-};
+}

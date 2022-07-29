@@ -30,7 +30,7 @@ function detectCycle_Map(head: ListNode | null): ListNode | null {
     }
 
     return null
-};
+}
 
 /**
  * 时间复杂度: O(N)

@@ -13,25 +13,25 @@ interface ExampleType {
 
 const example: ExampleType[] = [
     {
-        s: "abcabcbb",
-        target: 3
+        s: 'abcabcbb',
+        target: 3,
     },
     {
         s: 'bbbbb',
-        target: 1
+        target: 1,
     },
     {
         s: 'pwwkew',
-        target: 3
+        target: 3,
     },
     {
-        s: "abba",
-        target: 2
+        s: 'abba',
+        target: 2,
     },
     {
-        s: "abbcdea",
-        target: 5
-    }
+        s: 'abbcdea',
+        target: 5,
+    },
 ]
 
 test('', () => {

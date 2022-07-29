@@ -47,4 +47,4 @@ function removeNthFromEnd(head: Types.ListNode | null, n: number): Types.ListNod
     cur.next = cur.next?.next!
 
     return head
-};
+}

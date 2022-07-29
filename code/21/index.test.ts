@@ -7,7 +7,5 @@
 const example: Types.ExampleType[] = []
 
 test('', () => {
-    example.forEach((v) => {
-
-    })
+    example.forEach((v) => {})
 })

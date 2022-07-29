@@ -4,10 +4,8 @@
  * @since 1.0.0
  */
 
-const example_146:Types.ExampleType[] = []
+const example_146: Types.ExampleType[] = []
 
 test('146', () => {
-    example_146.forEach((v) => {
-        
-    })
+    example_146.forEach((v) => {})
 })

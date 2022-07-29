@@ -11,7 +11,7 @@ function addToArrayForm(num: number[], k: number): number[] {
     const len = num.length
 
     for (let i = len - 1; i >= 0; i--) {
-        let carry = num[i] + k % 10
+        let carry = num[i] + (k % 10)
 
         k = Math.floor(k / 10)
 
@@ -33,4 +33,4 @@ function addToArrayForm(num: number[], k: number): number[] {
     res.reverse()
 
     return res
-};
+}

@@ -17,11 +17,7 @@ export function isValid(s: string): boolean {
         } else {
             const top = stack[stack.length - 1]
 
-            if (
-                (top === '[' && check === ']') ||
-                (top === '{' && check === '}') ||
-                (top === '(' && check === ')')
-            ) {
+            if ((top === '[' && check === ']') || (top === '{' && check === '}') || (top === '(' && check === ')')) {
                 stack.pop()
             } else {
                 return false

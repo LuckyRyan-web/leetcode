@@ -1,4 +1,4 @@
-import { ListNode } from './../common/index';
+import { ListNode } from './../common/index'
 /**
  * @author liuyuan
  * @date 2022-07-13 17:54
@@ -27,4 +27,4 @@ function mergeTwoLists(list1: Types.ListNode | null, list2: Types.ListNode | nul
     p3.next = p1 !== null ? p1 : p2
 
     return list3.next
-};
+}

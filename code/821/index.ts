@@ -23,7 +23,6 @@ export function shortestToChar(s: string, c: string): number[] {
 
         // 计算每个下标到 "c" 字符串的距离
         answer[i] = i - j
-
     }
 
     // 反向遍历
@@ -33,8 +32,7 @@ export function shortestToChar(s: string, c: string): number[] {
         }
 
         answer[i] = Math.min(answer[i], j - i)
-
     }
 
     return answer
-};
+}

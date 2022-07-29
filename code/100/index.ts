@@ -27,9 +27,5 @@ function isSameTree(p: TreeNode | null, q: TreeNode | null): boolean {
         return !p && !q
     }
 
-    return (
-        p.val === q.val &&
-        isSameTree(q.left, p.left) &&
-        isSameTree(q.right, p.right)
-    )
+    return p.val === q.val && isSameTree(q.left, p.left) && isSameTree(q.right, p.right)
 }

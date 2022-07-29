@@ -1,4 +1,4 @@
-import { ListNode } from './../common/index';
+import { ListNode } from './../common/index'
 /**
  * @author liuyuan
  * @date 2022-07-22 17:16
@@ -18,7 +18,7 @@ import { ListNode } from './../common/index';
 
 /**
  * preA -> A -> B -> nextB
- * 
+ *
  * A.next -> nextB
  * preA.next -> B
  * B.next -> A
@@ -50,4 +50,4 @@ function swapPairs(head: Types.ListNode | null): Types.ListNode | null {
     }
 
     return preNode.next
-};
+}

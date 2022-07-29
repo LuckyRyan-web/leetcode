@@ -27,7 +27,6 @@ export default function distanceBetweenBusStops(distance: number[], start: numbe
 
     /** 如果 start 是从中间开始，遍历到数组的头部都没有找到目的地，就需要从数组的尾部继续开始找 */
     while (left !== destination) {
-
         left--
 
         if (left < 0) {

@@ -26,10 +26,10 @@ function maxDepth(root: Types.TreeNode | null): number {
     let deepLen = 0
 
     /**
-     * 
+     *
      * @param root {TreeNode | null} 树的节点
      * @param len {number} 节点的长度
-     * @returns 
+     * @returns
      */
     const dfs = (root: Types.TreeNode | null, len: number) => {
         if (!root) {
@@ -51,4 +51,4 @@ function maxDepth(root: Types.TreeNode | null): number {
     dfs(root, 1)
 
     return deepLen
-};
+}

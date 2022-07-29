@@ -11,25 +11,25 @@ const example_1184: Types.ExampleType[] = [
         distance: [1, 2, 3, 4],
         start: 0,
         destination: 1,
-        target: 1
+        target: 1,
     },
     {
         distance: [1, 2, 3, 4],
         start: 0,
         destination: 2,
-        target: 3
+        target: 3,
     },
     {
         distance: [1, 2, 3, 4],
         start: 0,
         destination: 3,
-        target: 4
+        target: 4,
     },
     {
         distance: [7, 10, 1, 12, 11, 14, 5, 0],
         start: 7,
         destination: 2,
-        target: 17
+        target: 17,
     },
 ]
 

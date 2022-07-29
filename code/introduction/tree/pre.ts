@@ -13,7 +13,6 @@ const preOrder = (root: TreeType | null) => {
     preOrder(root?.right)
 }
 
-
 /** 堆栈方法 */
 const preOrder_stack = (root: Tree) => {
     if (!root) {

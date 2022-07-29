@@ -37,4 +37,4 @@ function getIntersectionNode(headA: ListNode | null, headB: ListNode | null): Li
     }
 
     return null
-};
+}

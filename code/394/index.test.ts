@@ -7,21 +7,21 @@ import { decodeString } from './index'
 
 const example_394: Types.ExampleType[] = [
     {
-        s: "3[a]2[bc]",
-        target: "aaabcbc"
+        s: '3[a]2[bc]',
+        target: 'aaabcbc',
     },
     {
-        s: "3[a2[c]]",
-        target: "accaccacc"
+        s: '3[a2[c]]',
+        target: 'accaccacc',
     },
     {
-        s: "2[abc]3[cd]ef",
-        target: "abcabccdcdcdef"
+        s: '2[abc]3[cd]ef',
+        target: 'abcabccdcdcdef',
     },
     {
-        s: "abc3[cd]xyz",
-        target: "abccdcdcdxyz"
-    }
+        s: 'abc3[cd]xyz',
+        target: 'abccdcdcdxyz',
+    },
 ]
 
 test('', () => {

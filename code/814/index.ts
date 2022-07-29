@@ -28,5 +28,5 @@ function pruneTree(root: Types.TreeNode | null): Types.TreeNode | null {
     if (root.left !== null || root.right !== null) {
         return root
     }
-    return root.val === 0 ? null : root;
-};
+    return root.val === 0 ? null : root
+}
