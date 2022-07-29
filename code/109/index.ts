@@ -1,9 +1,10 @@
-import { ListNode, TreeNode } from './../common/index';
+import { TreeNode } from '../common'
 /**
  * @author liuyuan
  * @date 2022-07-23 18:52
  * @since 1.0.0
  */
+
 /**
  * Definition for singly-linked list.
  * class ListNode {
@@ -33,15 +34,15 @@ import { ListNode, TreeNode } from './../common/index';
 /**
  * 采用快慢指针方法，快指针移动到末尾的时候，慢指针刚好指到中间
  */
-function sortedListToBST(head: Types.ListNode | null): Types.TreeNode | null {
+function sortedListToBST(head: ListNode | null): TreeNode | null {
     if (!head) {
         return null
     }
 
     return dfs(head, null)
-};
+}
 
-function dfs(head: Types.ListNode, tail: Types.ListNode | null) {
+function dfs(head: ListNode, tail: ListNode | null) {
     if (head === tail) {
         return null
     }
