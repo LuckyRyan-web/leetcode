@@ -12,7 +12,7 @@ export class ListNode {
 }
 
 export class TreeNode {
-    val: number
+    val: number | string
     left: TreeNode | null
     right: TreeNode | null
     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
