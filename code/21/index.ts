@@ -1,4 +1,4 @@
-import { ListNode } from './../common/index'
+import { ListNode } from '@/common/index'
 /**
  * @author liuyuan
  * @date 2022-07-13 17:54

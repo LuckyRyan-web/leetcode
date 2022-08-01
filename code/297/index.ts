@@ -1,4 +1,4 @@
-import { TreeNode } from './../common/index'
+import { TreeNode } from '@/common/index'
 /**
  * @author liuyuan
  * @date 2022-07-31 16:27
