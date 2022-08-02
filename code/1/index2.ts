@@ -10,7 +10,7 @@ export function twoSum(nums: number[], target: number) {
     for (let i = 0; i <= nums.length; i++) {
         const num = map[target - nums[i]]
         if (num || num === 0) {
-            return [map[target - nums[i]], i]
+            return [num, i]
         } else {
             map[nums[i]] = i
         }
