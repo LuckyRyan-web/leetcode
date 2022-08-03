@@ -4,18 +4,23 @@
  * @since 1.0.0
  */
 
-function topKFrequent(nums: number[], k: number): number[] {
-    let length: number = nums.length
-    if (k >= length) {
-        return nums
+export default function topKFrequent(nums: number[], k: number): number[] {
+    const map = new Map<number, number>()
+
+    for (let i = 0; i < nums.length; i++) {
+        if (!map.has(nums[i])) {
+            map.set(nums[i], 1)
+        } else {
+            let count = map.get(nums[i]) as number
+            map.set(nums[i], count + 1)
+        }
     }
-    let numsMap = new Map()
-    for (let i = 0; i < length; i++) {
-        const n: number | undefined = numsMap.get(nums[i])
-        numsMap.set(nums[i], typeof n === 'number' ? n + 1 : 1)
-    }
-    return Array.from(numsMap)
-        .sort((a: [number, number], b: [number, number]) => b[1] - a[1])
-        .slice(0, k)
-        .map((item) => item[0])
+
+    const arr = Array.from(map)
+    arr.sort((a, b) => b[1] - a[1])
+
+    const result = arr.map((v) => v[0])
+    // console.log(result.slice(0, k))
+
+    return result.slice(0, k)
 }
