@@ -20,7 +20,6 @@ export default function topKFrequent(nums: number[], k: number): number[] {
     arr.sort((a, b) => b[1] - a[1])
 
     const result = arr.map((v) => v[0])
-    // console.log(result.slice(0, k))
 
     return result.slice(0, k)
 }
