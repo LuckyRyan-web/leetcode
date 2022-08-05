@@ -1,4 +1,10 @@
 export default function test2() {
+    /**
+     * 对于两个节点的顺序要求不一致的情况下, 坐标排序到一个点的距离有 n * (n - 1) 种组合
+     * 使用 map 解法的时候，还是需要两层循环来遍历所有的距离
+     * @param points
+     * @returns
+     */
     function numberOfBoomerangs(points: number[][]): number {
         let num = 0
 
@@ -11,6 +17,7 @@ export default function test2() {
                 }
                 const distance = getDistance(points[i], points[j])
 
+                // map 的距离为 key, 出现次数为 value, 每次出现同样的距离 +1
                 if (map.has(distance)) {
                     map.set(distance, map.get(distance) + 1)
                 } else {
@@ -19,7 +26,7 @@ export default function test2() {
             }
 
             map.forEach((count, distance) => {
-                return (num += count * (count - 1))
+                num = num + count * (count - 1)
             })
         }
 
