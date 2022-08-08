@@ -8,9 +8,10 @@ export function test2() {
         let left: number = 0
         let right: number = nums.length - 1
 
-        let resArr: number[] = new Array(nums.length)
+        let resArr: number[] = []
 
         let k: number = resArr.length - 1
+
         while (left <= right) {
             let i = Math.pow(nums[left], 2)
             let j = Math.pow(nums[right], 2)
@@ -24,6 +25,7 @@ export function test2() {
             }
             k--
         }
+
         return resArr
     }
 }
