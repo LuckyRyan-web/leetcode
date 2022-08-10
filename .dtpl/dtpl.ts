@@ -27,24 +27,24 @@ export default function (source: _.Source): _.IDtplConfig {
         templates: [
             {
                 name: 'template/code',
-                matches: (
-                    _minimatch: _.IMinimatchFunction,
-                    source: _.Source
-                ) => {
+                matches: (_minimatch: _.IMinimatchFunction, source: _.Source) => {
                     if (!source.isDirectory) {
                         return false
                     }
 
                     const { rawModuleName, relativeFilePath } = source.basicData
 
-                    // 在 pages 中大小写都要生成 mdx 文件
                     if (!relativeFilePath.startsWith('code/')) {
                         return false
                     }
 
                     return true
                 },
-            }
+            },
+            {
+                name: 'template/file/index.ts.dtpl',
+                matches: 'code/**/**.ts',
+            },
         ],
 
         globalData: {
