@@ -4,16 +4,17 @@ function searchInsert(nums: number[], target: number): number {
     let right = nums.length - 1
 
     while (left <= right) {
-        let mid = Math.floor((right - left) / 2) + left
+        const middle = Math.floor((left + right) / 2)
 
-        if (nums[mid] === target) {
-            return mid
-        } else if (nums[mid] < target) {
-            left = mid + 1
-        } else if (nums[mid] > target) {
-            right = mid - 1
+        if (nums[middle] > target) {
+            right = middle - 1
+        } else if (nums[middle] < target) {
+            left = middle + 1
+        } else {
+            return middle
         }
     }
 
+    // 如果都不存在的话就返回要被插入的顺序，即返回 left
     return left
 }
