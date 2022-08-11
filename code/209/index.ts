@@ -14,6 +14,7 @@
  * @return {*}  {number}
  */
 function minSubArrayLen(target: number, nums: number[]): number {
+    // 给出一个不可能会出现的值
     let result = Number.MAX_SAFE_INTEGER
     let sum = 0
     let subLength = 0

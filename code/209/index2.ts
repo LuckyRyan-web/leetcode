@@ -6,6 +6,8 @@
 
 /**
  * 双指针写法
+ * 时间复杂度：O(n)
+ * 空间复杂度：O(1)
  * @param {number} target
  * @param {number[]} nums
  * @return {*}  {number}
