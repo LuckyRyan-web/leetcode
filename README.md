@@ -11,3 +11,5 @@ https://jestjs.io/zh-Hans/docs/getting-started
 https://github.com/datastructures-js
 
 https://datastructures-js.github.io/
+
+http://www.collectionsjs.com/
