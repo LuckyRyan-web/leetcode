@@ -26,7 +26,8 @@ function maxDepth(root: Types.TreeNode | null): number {
     let deepLen = 0
 
     /**
-     *
+     * 时间复杂度: O(N)
+     * 空间复杂度: O(N) 即便是没有线性增长的数据结构，但是数据在递归的时候存在于内存中，最好的情况是 O(logN), 最坏的情况就是 O(N)
      * @param root {TreeNode | null} 树的节点
      * @param len {number} 节点的长度
      * @returns
