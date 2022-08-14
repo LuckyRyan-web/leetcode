@@ -1,6 +1,6 @@
 import { Tree, bt } from './index'
 
-/** 先序遍历 */
+/** 中序遍历 */
 
 /** 递归方法 */
 const inOrder = (root: Tree) => {
@@ -13,7 +13,10 @@ const inOrder = (root: Tree) => {
     inOrder(root.right)
 }
 
-/** 堆栈方法 */
+/**
+ * 堆栈方法
+ * 也就是需要递归把所有的左节点都 push 到栈中
+ */
 const inOrder_stack = (root: Tree) => {
     if (!root) {
         return

@@ -1,5 +1,10 @@
 import { Tree, TreeType, bt } from './index'
 
+/**
+ * 后序遍历
+ * 为了要用堆栈实现的话，需要有两个栈来实现
+ */
+
 /** 递归方法 */
 const postOrder = (root: Tree) => {
     if (!root) {
@@ -17,9 +22,13 @@ const postOrder_stack = (root: Tree) => {
         return
     }
 
+    /** 倒置的堆栈 */
     const outputStack = []
+
+    /** 函数调用的堆栈 */
     const stack = [root]
 
+    /** 后序遍历的顺序为 “左右根”, 所以堆栈的顺序就为 “根右左” */
     while (stack.length) {
         const n = stack.pop() as TreeType
         outputStack.push(n)
