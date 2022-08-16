@@ -17,8 +17,8 @@ function maxDepth_Recursion(root: Types.TreeNode | null): number {
         return 0
     }
 
-    const leftHeight = maxDepth(root.left)
-    const rightLight = maxDepth(root.right)
+    const leftHeight = maxDepth_Recursion(root.left)
+    const rightLight = maxDepth_Recursion(root.right)
 
     return Math.max(leftHeight, rightLight) + 1
 }
