@@ -54,4 +54,3 @@ function hasPathSum(root: TreeNode | null, targetSum: number): boolean {
 
     return res
 }
-s
