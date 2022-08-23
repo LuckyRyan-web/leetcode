@@ -36,6 +36,19 @@ function default_1(source) {
                 },
             },
             {
+                name: 'template/js_template',
+                matches: (_minimatch, source) => {
+                    if (!source.isDirectory) {
+                        return false;
+                    }
+                    const { rawModuleName, relativeFilePath } = source.basicData;
+                    if (!relativeFilePath.startsWith('JSCode/')) {
+                        return false;
+                    }
+                    return true;
+                },
+            },
+            {
                 name: 'template/file/index.ts.dtpl',
                 matches: 'code/**/**.ts',
             },
