@@ -18,3 +18,9 @@ http://www.collectionsjs.com/
 
 [代码随想录](https://programmercarl.com/)
 [算法通关手册](https://algo.itcharge.cn/)
+
+## 题目推荐
+
+### 二分法
+
+https://leetcode.cn/problems/valid-perfect-square/solution/gong-shui-san-xie-yi-ti-shuang-jie-er-fe-g5el/
