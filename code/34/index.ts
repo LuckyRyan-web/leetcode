@@ -1,6 +1,6 @@
 /**
  * leetcode: https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/
- * Tags:
+ * Tags: 二分法
  * @author liuyuan
  * @date 2022-08-23 17:35
  * @since 1.0.0
