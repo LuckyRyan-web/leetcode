@@ -41,16 +41,13 @@ function reorderSpaces(text: string): string {
 
     if (words.length <= 1) {
         result = words[0]
-
-        if (remainder) {
-            result = result + ' '.repeat(remainder)
-        }
     } else {
         result = words.join(' '.repeat(emptyLen))
+    }
 
-        if (remainder) {
-            result = result + ' '.repeat(remainder)
-        }
+    /** 处理多余的空格数，添加到末尾 */
+    if (remainder) {
+        result = result + ' '.repeat(remainder)
     }
 
     return result
