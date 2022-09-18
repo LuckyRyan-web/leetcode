@@ -21,7 +21,7 @@ export function test3() {
 
                 result = Math.min(subL, result)
 
-                sum = sum - nums[i]
+                sum -= nums[i]
 
                 i++
             }
