@@ -6,6 +6,8 @@
 
 https://jestjs.io/zh-Hans/docs/getting-started
 
+https://juejin.cn/post/7120136930662023176#heading-5
+
 ## 数据结构相关库
 
 https://github.com/datastructures-js
