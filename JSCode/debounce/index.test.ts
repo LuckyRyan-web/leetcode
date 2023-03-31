@@ -4,6 +4,4 @@
  * @since 1.0.0
  */
 
-test('debounce', () => {
-    
-})
+test('debounce', () => {})
