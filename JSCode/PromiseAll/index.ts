@@ -9,6 +9,8 @@ export function promiseAll<T>(promises: Promise<T>[]): Promise<T[]> {
     return new Promise((resolve, reject) => {
         const result: T[] = []
 
+        let times = 0
+
         if (promises.length === 0) {
             resolve(result)
             return
@@ -18,8 +20,9 @@ export function promiseAll<T>(promises: Promise<T>[]): Promise<T[]> {
             Promise.resolve(v)
                 .then((res) => {
                     result[index] = res
+                    times++
 
-                    if (index === promises.length - 1) {
+                    if (times === promises.length) {
                         resolve(result)
                     }
                 })
